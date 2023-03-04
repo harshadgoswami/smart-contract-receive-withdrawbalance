@@ -1,0 +1,11 @@
+Sure, here's an example of a Solidity smart contract that can accept payment and has a function to transfer the contract's balance to a specified address:
+
+PaymentContract.Sol 
+
+This smart contract has a receivePayment function that can accept payment from anyone, and a withdrawBalance function that can be called by the contract owner to transfer the contract's balance to a specified address.
+
+The receivePayment function is marked as external and payable, which means that it can receive payment in the form of ether when called. The function can be modified to perform some action with the payment, such as updating the contract's balance or storing data associated with the payment.
+
+The withdrawBalance function can be called by the contract owner to transfer the contract's balance to the specified recipient address. The function checks that the caller is the contract owner and that the contract's balance is greater than zero before transferring the balance using the transfer function.
+
+Note that this smart contract is just a simple example and may not be suitable for production use. It does not include important features such as access control, error handling, and data validation, which should be implemented in real-world smart contracts.
